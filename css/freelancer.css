@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Eurostile Lt", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -39,7 +39,7 @@ hr.star-light:after,
 hr.star-primary:after,
 hr.star-success:after {
   content: "2";
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Eurostile Lt", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
   position: relative;
   top: -0.8em;
@@ -86,7 +86,7 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Eurostile LT", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
@@ -121,16 +121,20 @@ header .intro-text .skills {
     transition: all 0.3s;
   }
   .navbar-fixed-top.navbar-shrink {
-    padding: 10px 0;
+    padding: 14px 0;
   }
   .navbar-fixed-top.navbar-shrink .navbar-brand {
     font-size: 1.5em;
+    padding: 0 25px;
+  }
+  .navbar-fixed-top.navbar-shrink .nav-logo {
+    display: block;
   }
 }
 .navbar {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Eurostile LT", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: normal;
 }
 .navbar a:focus {
   outline: none;
@@ -140,6 +144,12 @@ header .intro-text .skills {
 }
 .navbar .navbar-nav li a:focus {
   outline: none;
+}
+.navbar .navbar-nav li a {
+  font-size: 1em;
+}
+.navbar .nav-logo {
+  display: none;
 }
 .navbar-default,
 .navbar-inverse {
@@ -172,7 +182,7 @@ section.success a.active {
     padding-top: 75px;
   }
 }
-#welcoming {
+#service {
   background: #2c3e50;
   color: white;
 }
