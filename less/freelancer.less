@@ -81,7 +81,7 @@ hr.star-success {
 }
 
 hr.star-success:after {
-	background-color: @brand-primary;
+	background-color: @background-success;
 	color: @brand-success;
 }
 
@@ -331,20 +331,27 @@ section.success {
     }
 }
 // Team section
-.team-member {
-	text-align: center;
-	margin-bottom: 50px;
-	img {
-		margin: 0 auto;
-		border: 7px solid white;
-	}
-	h4 {
-		margin-top: 25px;
-		margin-bottom: 0;
-		text-transform: none;
-	}
-	p {
-		margin-top: 0;
+#team {
+	background-color: @background-success;
+	color: @font-white;
+	.team-member {
+		margin: 0 0 15px;
+
+		text-align: center;
+		// margin-bottom: 50px;
+		img {
+			margin: 0 auto;
+			height: 400px;
+			max-height: 400px;
+		}
+		h4 {
+			margin-top: 50px;
+			margin-bottom: 0;
+			text-transform: none;
+		}
+		p {
+			margin-top: 0;
+		}
 	}
 }
 
@@ -432,20 +439,20 @@ form .row:first-child .floating-label-form-group {
 }
 
 footer {
-	color: white;
+	color: @font-white;
 	h3 {
 		margin-bottom: 30px;
 	}
 	.footer-above {
 		padding-top: 50px;
-		background-color: @brand-primary;
+		background-color: @nav-color;
 	}
 	.footer-col {
 		margin-bottom: 50px;
 	}
 	.footer-below {
 		padding: 25px 0;
-		background-color: darken(@brand-primary, 5%);
+		background-color: darken(@nav-color, 5%);
 	}
 }
 
