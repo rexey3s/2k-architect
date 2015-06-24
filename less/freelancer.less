@@ -38,7 +38,7 @@ hr.star-primary,
 hr.star-success {
     padding: 0;
     border: none;
-    border-top: solid 5px;
+    border-top: solid 3px;
     text-align: center;
     max-width: 345px;
     margin: 25px auto 30px;
@@ -171,7 +171,7 @@ header {
 	text-transform: uppercase;
 	// font-weight: 700;
 	font-weight: normal;
-	font-size: 20pt;
+	font-size: 15pt;
 	a:focus {
 		outline: none;
 	}
@@ -202,7 +202,7 @@ header {
 		background-repeat:no-repeat;
 		background-position:center center;
 		height: 100px;
-		padding-bottom: 220px;
+		padding-bottom: 200px;
 	}
 	.item {
 		padding-top: 88px;
@@ -214,7 +214,7 @@ header {
 }
 
 section {
-    padding: 100px 0;
+    padding: 90px 0;
     h2 {
     	margin: 0;
     	font-size: 3em;
@@ -247,14 +247,22 @@ section.success {
 #about {
 	background: @background-white;
 	color : @font-black;
-	p {
-		margin-top : 40px;
+	.row {
+		h1 {
+			margin: 0 auto;
+		}
 	}
+
 }
 
 #service {
 	background: @background-success;
 	color: @font-white;
+	.row {
+		h1 {
+			margin: 0 auto;
+		}
+	}
 	.service-heading {
 		padding: 20px 0;
 		font-size: 15pt;
@@ -279,6 +287,11 @@ section.success {
 #project {
 	background: @background-white;
 	color: @font-black;
+	.row {
+		h1 {
+			margin: 0 auto;
+		}
+	}
 	.project-item {
 		margin: 0 0 15px;
         right: 0;
@@ -334,6 +347,11 @@ section.success {
 #team {
 	background-color: @background-success;
 	color: @font-white;
+	.row {
+		h1 {
+			margin: 0 auto;
+		}
+	}
 	.team-member {
 		margin: 0 0 15px;
 
@@ -342,6 +360,7 @@ section.success {
 		img {
 			margin: 0 auto;
 			height: 400px;
+			width: 400px;
 			max-height: 400px;
 		}
 		h4 {
@@ -491,68 +510,8 @@ footer {
 	    }
     }
 }
+
 .project-modal {
-	.modal-content {
-			border-radius: 0;
-			background-clip: border-box;
-			-webkit-box-shadow: none;
-			box-shadow: none;
-			border: none;
-			min-height: 100%;
-			padding: 100px 0;
-			text-align: center;
-		h2 {
-				margin: 0;
-				font-size: 3em;
-		}
-		img {
-			margin-bottom: 30px;
-		}
-		.item-details {
-			margin: 30px 0;
-		}
-	}
-		.close-modal {
-				position: absolute;
-				width:75px;
-				height:75px;
-				background-color:transparent;
-				top: 25px;
-				right: 25px;
-				cursor: pointer;
-				&:hover {
-						opacity: 0.3;
-				}
-				.lr {
-						height:75px;
-						width:1px;
-						margin-left:35px;
-						background-color:@background-white;
-						transform: rotate(45deg);
-						-ms-transform: rotate(45deg);
-						/* IE 9 */
-						-webkit-transform: rotate(45deg);
-						/* Safari and Chrome */
-						z-index:1051;
-						.rl {
-								height:75px;
-								width:1px;
-								background-color:@background-white;
-								transform: rotate(90deg);
-								-ms-transform: rotate(90deg);
-								/* IE 9 */
-								-webkit-transform: rotate(90deg);
-								/* Safari and Chrome */
-								z-index:1052;
-						}
-				}
-		}
-		.modal-backdrop {
-			opacity: 0;
-			display: none;
-		}
-}
-.portfolio-modal {
 	.modal-content {
 	    border-radius: 0;
 	    background-clip: border-box;
